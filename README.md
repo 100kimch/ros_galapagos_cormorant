@@ -34,6 +34,8 @@ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
 cd ~/catkin_ws/src/turtlebot3
 sudo rm -r turtlebot3_description/ turtlebot3_teleop/ turtlebot3_navigation/ turtlebot3_slam/ turtlebot3_example/
 sudo apt-get install ros-melodic-rosserial-python ros-melodic-tf
+
+sudo apt install nano  # For personal use
 ```
 
 
@@ -54,5 +56,9 @@ iwlist reg set US  # Set AP Country as USA
 sudo refkill list
 sudo reboot now
 ```
+
+### Modify Codes of OpenCR
+
+> Follow this procedure: [Manipulation - OpenCR Setup](http://emanual.robotis.com/docs/en/platform/turtlebot3/manipulation/#opencr-setup)
 
 
