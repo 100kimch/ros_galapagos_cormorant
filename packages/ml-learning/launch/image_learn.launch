@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="type" default="full"/>
+    <node name="runner_$(arg type)" pkg="ml-learning" type="launcher.py" args="$(arg type)" output="screen" cwd="ROS_HOME" />
+</launch>
