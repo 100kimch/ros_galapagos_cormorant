@@ -9,4 +9,7 @@ rm -rf ${PATH_CATKIN}/src/${NAME_PACKAGE}
 cp -r ${PATH_PACKAGE} ${PATH_CATKIN}/src/${NAME_PACKAGE}
 cd ${PATH_PACKAGE}
 sudo chmod -R 777 *
+cd ${PATH_CATKIN}
+rosdep install --from-path src --ignore-src -r
+catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.5m -DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.5m.so
 cd ~
