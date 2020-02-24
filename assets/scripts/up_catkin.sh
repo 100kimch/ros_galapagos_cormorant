@@ -9,7 +9,4 @@ rm -rf ${PATH_CATKIN}/src/${NAME_PACKAGE}
 cp -r ${PATH_PACKAGE} ${PATH_CATKIN}/src/${NAME_PACKAGE}
 cd ${PATH_PACKAGE}
 sudo chmod -R 777 *
-cd ${PATH_CATKIN}
-rosdep install --from-path src --ignore-src -r
-catkin_make
 cd ~
